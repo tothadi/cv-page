@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="functions.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CMuli" rel="stylesheet">
+  <link rel="icon" href="/image/myphoto.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:image:url" content="http://oakdesign.hu/image/oakdesign-preview.png" />
+  <meta property="og:image:title" content="Tóth Ádám, önéletrajz" />
+  <meta property="og:image:width" content="480" />
+  <meta property="og:image:height" content="270" />
+  <title>Tóth Ádám, önéletrajz</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="fixed-nav" onmouseover="fixedNavOn()" onmouseout="fixedNavOff()">
+        <img id="menu-pic" src="/image/menu.png" alt="menu button">
+        <a class="menu-1 fixed-menu" onclick="contentFunction()">IT készségek</a>
+        <a class="menu-2 fixed-menu" onclick="contentFunction()">Tapasztalatok</a>
+        <a class="menu-3 fixed-menu" onclick="contentFunction()">Célok</a>
+        <a class="menu-4 fixed-menu" onclick="contentFunction()">Egyéb készségek</a>
+        <a class="menu-5 fixed-menu" onclick="contentFunction()">Tanulmányok</a>
+        <a class="menu-6 fixed-menu" onclick="contentFunction()">Hobbik</a>
+      </div>
+      <div id="main-nav">
+        <ul id="nav-left" class="nav-element">
+          <li><a id="menu-button-1" class="menu-1 main-nav-item" onmouseover="menuDescrOn()">IT készségek</a><a id="menu-descr-1"
+              class="menu-1 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Mi közöm az IT-hez?</a></li>
+          <li><a id="menu-button-2" class="menu-2 main-nav-item" onmouseover="menuDescrOn()">Tapasztalatok</a><a id="menu-descr-2"
+              class="menu-2 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Hol dolgoztam eddig?</a></li>
+          <li><a id="menu-button-3" class="menu-3 main-nav-item" onmouseover="menuDescrOn()">Célok</a><a id="menu-descr-3" class="menu-3 main-nav-item"
+              onclick="contentFunction()" onmouseout="menuDescrOff()">Mik a terveim?</a></li>
+        </ul>
+        <div onclick="mainClose()" id="profile-image" class="nav-element">
+          <img id="profile-pic" src="/image/myphoto.jpg" alt="Tóth Ádám">
+        </div>
+        <ul id="nav-right" class="nav-element">
+          <li><a id="menu-button-4" class="menu-4 main-nav-item" onmouseover="menuDescrOn()">Egyéb készségek</a><a id="menu-descr-4"
+              class="menu-4 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Miben vagyok még jártas?</a></li>
+          <li><a id="menu-button-5" class="menu-5 main-nav-item" onmouseover="menuDescrOn()">Tanulmányok</a><a id="menu-descr-5"
+              class="menu-5 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Hova jártam suliba?</a></li>
+          <li><a id="menu-button-6" class="menu-6 main-nav-item" onmouseover="menuDescrOn()">Hobbik</a><a id="menu-descr-6" class="menu-6 main-nav-item"
+              onclick="contentFunction()" onmouseout="menuDescrOff()">Mit csinálok szívesen?</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contents">
+      <div id="intro">
+        <p class="intro-text">Tóth Ádám vagyok, biológus. A szakmám nagyon szép, de szeretném kipróbálni magam másban. Az IT mindig is érdekelt,
+          már általános iskola 3. osztályában elkezdtem számítástechnikát tanulni. Ismereteimet azóta is folyamatosan fejlesztem.
+          Néhány oldalt már készítettem wysiwyg szoftverrel, de nem voltam elégedett. Nagyjából egy éve kezdtem el komolyabban
+          foglalkozni a webfejlesztés elsajátításával, órákra el tudok merülni a feladatokban, és saját projektekben. A még
+          gyorsabb fejlődés érdekében mielőbb szeretnék fejlesztőként dolgozni.</p>
+      </div>
+      <div id="content-1" class="content-section">
+        <a id="close-button" onclick="closeFunction()">Bezárás</a>
+        <a id="pic-close-button" onclick="closePic()">Bezárás</a>
+        <h2>IT ismereteim, dióhéjban</h2>
+        <div class="skill-row">
+          <img id="skill-1" onclick="skillFunction()" class="skill-icon" src="/image/win.png" alt="windows">
+          <img id="skill-2" onclick="skillFunction()" class="skill-icon" src="/image/excel.png" alt="excel">
+          <img id="skill-3" onclick="skillFunction()" class="skill-icon" src="/image/access.png" alt="access">
+        </div>
+        <p id="desc-1" class="description">Microsoft Windows<br><br>Telepítem, karbantartom, beletúrok a regedit-be, elhárítom a hibákat.</p>
+        <p id="desc-2" class="description">Microsoft Excel<br><br>Szeretem, sokat használom. Olyan szép,színes függvényeket tudok gyártani, mint <a onclick="excelPic()">ez</a>.</p>
+        <img id="excel-function" src="/image/excel-function.jpg" alt="excel function">
+        <p id="desc-3" class="description">Microsoft Access<br><br>Sokat dolgoztam vele, geoadatbázisokat kezeltem benne. Írtam már SQL lekérdezést is.</p>
+        <div class="skill-row">
+          <img id="skill-4" onclick="skillFunction()" class="skill-icon" src="/image/gis.png" alt="arcgis">
+          <img id="skill-5" onclick="skillFunction()" class="skill-icon" src="/image/sketch.png" alt="sketchup">
+          <img id="skill-6" onclick="skillFunction()" class="skill-icon" src="/image/wifi.png" alt="wifi">
+        </div>
+        <p id="desc-4" class="description">ESRI ArcGIS<br><br>A nemzeti parknál ismerkedtem meg a térinformatikával. Autodidakta módon tanultam meg az ESRI
+          szoftverét használni. Eddig minden kihívással megbirkóztam benne.</p>
+        <p id="desc-5" class="description">Google Sketchup<br><br>Mivel sokat barkácsolok, meg házfelújítás van folyamatban (4 éve, kicsit lassan haladunk),
+          ezért olyan programot kerestem, amiben egyszerűen lehet 3d-s látványterveket csinálni. Annyit szórakoztam a Google
+          SketchUp-pal, hogy komplett irodaház berendezését is terveztem már benne a nemzeti parknál.</p>
+        <p id="desc-6" class="description">Hálózatüzemeltetés<br><br>A wireless ikonnal arra próbálok utalni, hogy az alapvető hálózatüzemeltetési feladatokat
+          meg tudom oldani egy otthoni vagy kisebb irodai hálózat esetén, legyen szó hálózati meghajtók beállításáról, nyomtatók
+          kezeléséről, IP-ütközések feloldásáról.
+        </p>
+        <div class="skill-row">
+          <img id="skill-7" onclick="skillFunction()" class="skill-icon" src="/image/html.png" alt="html">
+          <img id="skill-8" onclick="skillFunction()" class="skill-icon" src="/image/css.png" alt="css">
+          <img id="skill-9" onclick="skillFunction()" class="skill-icon" src="/image/js.png" alt="js">
+        </div>
+        <p id="desc-7" class="description">Wireframe<br><br>Ezen nincs mit kifejteni, jelen oldal a bizonyíték.</p>
+        <p id="desc-8" class="description">She's got the look<br><br>Az alapvető property-ket már fejből paraméterezem. Ami nem megy, arra ott a w3 meg a stackoverflow.
+          Ha valami új probléma merül fel, akkor meg a Google a barátom.</p>
+        <p id="desc-9" class="description">Come on come on, do the locomotion<br><br>Sok funkciót meg tudok már oldani vele, de itt még erősen támaszkodom a
+          neten fellelhető tudásra.</p>
+        <div class="skill-row">
+          <img id="skill-10" onclick="skillFunction()" class="skill-icon" src="/image/responsive-design.png" alt="responsive design">
+          <img id="skill-11" onclick="skillFunction()" class="skill-icon" src="/image/bootstrap-logo.png" alt="bootstrap">
+          <img id="skill-12" onclick="skillFunction()" class="skill-icon" src="/image/github-logo.png" alt="github">
+        </div>
+        <p id="desc-10" class="description">Reszponszív dizájn<br><br>Sokat netezek a telefonomon, így tudom értékelni, és alkalmazom is!</p>
+        <p id="desc-11" class="description">Bootstrap<br><br>Ismerem a grid rendszert, meg még néhány hasznos class-t, minden másra ott a w3.</p>
+        <p id="desc-12" class="description">Git<br><br>Még csak most kezdtem el használni, mivel egyelőre egyedül dolgozom, csak verziókezelésre.</p>
+      </div>
+      <div id="content-2" class="content-section">
+        <h2>Eddigi szárnypróbálgatásaim a munka világában</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>munkakör</td>
+              <td>munkáltató</td>
+              <td>időszak</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Természetvédelmi szakügyintéző</td>
+              <td>Zala Megyei Kormányhivatal</td>
+              <td>2017-től</td>
+            </tr>
+            <tr>
+              <td>Natura 2000 munkatárs</td>
+              <td>Lycaena Kft.</td>
+              <td>2013-2016</td>
+            </tr>
+            <tr>
+              <td>Monitoring munkatárs</td>
+              <td>Őrségi Nemzeti Park Igazgatóság</td>
+              <td>2012</td>
+            </tr>
+            <tr>
+              <td>SQA mérnök</td>
+              <td>Flextronics Zalaegerszeg</td>
+              <td>2012</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="content-3" class="content-section">
+        <h2>Néhány dolog, amit szeretnék a közeljövőben megérni</h2>
+        <ol class="goal-list">
+          <li>JavaScript kimaxolása</li>
+          <li>NodeJS, AngularJS elsajátítása</li>
+          <li>PHP, Java elsajátítása</li>
+          <li>Elcsípni egy zsíros fejlesztőállást</li>
+          <li>A BMW-m restaurálása</li>
+          <li>Keresztülmotorozni Afrikán</li>
+        </ol>
+      </div>
+      <div id="content-4" class="content-section">
+        <h2>Mindenhez is értek</h2>
+        <table class="skill-table">
+          <tr>
+            <td>nyelvtudás</td>
+            <td>angolul folyékonyan beszélek, érthetően írok</td>
+          </tr>
+          <tr>
+            <td>gondolkodásmód</td>
+            <td>analitikus, megfigyelő, tervező, a tények embere</td>
+          </tr>
+          <tr>
+            <td>szociális készségek</td>
+            <td>nyitott, barátságos, higgadt, kommunikatív, csapatjátékos, problémamegoldó</td>
+          </tr>
+          <tr>
+            <td>kreativitás</td>
+            <td>rajzolás, fotózás, barkácsolás</td>
+          </tr>
+          <tr>
+            <td>zene</td>
+            <td>amatőr énekes, gitáros</td>
+          </tr>
+        </table>
+        <p>Ja, és tudok még villanyt szerelni, betont lesimítani (vízszintesre), <a href="http://www.sztghonismeret.hu/component/spidercatalog/showproduct/182/36/0/Kaszagy%C3%A1r?Itemid=182"
+            target="_blank">szentgotthárdival</a> kaszálni, <a href="http://budspencerofficial.com" target="_blank">hagymásbabot</a>          (meg még sok mást) főzni.</p>
+      </div>
+      <div id="content-5" class="content-section">
+        <h2>Ahol az arcélemet az iskolapadok kialakították</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>szak</td>
+              <td>iskola</td>
+              <td>időszak</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>webfejlesztő</td>
+              <td><a href="https://codeberryschool.com/hu/" target="_blank">CodeBerry.hu</a></td>
+              <td>2016-tól</td>
+            </tr>
+            <tr>
+              <td>biológus MSc</td>
+              <td>PTE-TTK</td>
+              <td>2009-2011</td>
+            </tr>
+            <tr>
+              <td>biológia BSc</td>
+              <td>PTE-TTK</td>
+              <td>2006-2009</td>
+            </tr>
+            <tr>
+              <td>geológus</td>
+              <td>ELTE-TTK</td>
+              <td>2005-2006</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="studies-text">2005-ben érettségiztem a zalaegerszegi Zrínyi Miklós Gimnáziumban, majd ezt követően az ELTE-TTK geológus szakán
+          kezdtem meg egyetemi éveimet, a megboldogult osztatlan képzésen.<br>Mivel a föld pora nem varázsolt el, így év
+          közben jelentkeztem a PTE-TTK biológia BSc szakára, ami jobban megfelelt az eredetileg dédelgetett terveimnek.
+          Mindenki meglepetésére sikerült 6 félév alatt abszolválni a képzést, majd újabb 2 év alatt a biológus mesterképzést
+          is letudtam.<br>Már akkor tudtam, hogy a tudományos karrier nem túl kifizetődő Magyarországon, így PhD-s babérokra
+          nem törtem.<br>Jelenleg a <a href="https://codeberryschool.com/hu/" target="_blank">CodeBerry.hu</a> online tanfolyamán
+          tanulom a webfejlesztést, napi 4-5 órában, esténként. Most épp a JavaScript tudásom elmélyítésével foglalkozom,
+          ezután pedig a PHP-re fogok ráállni.
+      </div>
+      <div id="content-6" class="content-section">
+        <h2>Beszéljenek a képek</h2>
+        <div id="thumbs" class="thumb-box" onwheel="thumbScroll()">
+          <img id="thumb-1" class="hobby-thumb" src="/image/01.jpg" alt="2002 óta focizom. Jelenleg a Zala megyei I. osztályban szereplő Zalalövői TK felnőtt csapatában játszom.">
+          <img id="thumb-2" class="hobby-thumb" src="/image/02.jpg" alt="Szeretek rajzolni, de ritkán szakítok rá időt. Ez a kép egy Note8-on készült, S-Pen-nel.">
+          <img id="thumb-3" class="hobby-thumb" src="/image/03.jpg" alt="Mindig akad a ház körül barkácsolni való, hol egy kutyaól, hol egy előszobafal.">
+          <img id="thumb-4" class="hobby-thumb" src="/image/04.jpg" alt="Egy-két évig elég sokat fotóztam, de aztán kellett a pénz motorra, így eladtam a vázamat.">
+          <img id="thumb-5" class="hobby-thumb" src="/image/05.jpg" alt="Négy kutyával az élet szép. 2 mudi, 1 komondor, 1 vizsla. Magyarok vagyunk, nem?">
+          <img id="thumb-6" class="hobby-thumb" src="/image/06.jpg" alt="Pár évig frontember voltam, de a Jancsi egyetemre ment. Határozatlan időre szünetel a banda.">
+          <img id="thumb-7" class="hobby-thumb" src="/image/07.jpg" alt="30 éves autón mindig van mit 'ekecsűni'.">
+          <img id="thumb-8" class="hobby-thumb" src="/image/08.jpg" alt="2015-ben szereztem A-s jogsit, 2017-ben eladtam a fényképezőgépet...">
+        </div>
+        <figure id="gallery">
+          <img id="close-x" class="pic-arrow" src="/image/close.png" alt="bezár" onclick="closeGallery()">
+          <div id="current-pic" onwheel="picScroll()">
+            <img id="pic-left" class="pic-arrow" src="/image/left.png" alt="előző" onclick="changeLeft()">
+            <img id="big-pic" src="" alt="">
+            <img id="pic-right" class="pic-arrow" src="/image/right.png" alt="következő" onclick="changeRight()">
+          </div>
+          <figcaption id="pic-cap"></figcaption>
+        </figure>
+      </div>
+      <div id="contact">
+        <h2>Itt érhetsz el</h2>
+        <div class="contact-icons">
+          <div id="contacts">
+            <a class="icons" href="https://www.linkedin.com/in/tothadi/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a class="icons" href="https://facebook.com/tothadamtheoak" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a class="icons" href="mailto:tothadam.onp@gmail.com" target="_top"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+            <a class="icons" href="https://instagram.com/oakerator" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="icons" href="https://github.com/tothadi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div id="copy-right">
+          <p>design &amp; code by tothadi - oakdesign.hu <i class="fa fa-copyright icons" aria-hidden="true"></i> 2018
+            <p>
+              <a href="http://oakdesign.hu" target="_blank"><img src="/image/oakdesign-logo.png" alt="oakdesign.hu"></a>
+              <a href="/en" target="_self"><img src="/image/english.png" alt="english version"></a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

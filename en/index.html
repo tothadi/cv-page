@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="/style.css">
+  <script type="text/javascript" src="/functions.js"></script>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display%7CMuli" rel="stylesheet">
+  <link rel="icon" href="/image/myphoto.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:image:url" content="http://oakdesign.hu/image/oakdesign-preview.png" />
+  <meta property="og:image:title" content="Ádám Tóth, CV" />
+  <meta property="og:image:width" content="480" />
+  <meta property="og:image:height" content="270" />
+  <title>Ádám Tóth, CV</title>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="fixed-nav" onmouseover="fixedNavOn()" onmouseout="fixedNavOff()">
+        <img id="menu-pic" src="/image/menu.png" alt="menu button">
+        <a class="menu-1 fixed-menu" onclick="contentFunction()">IT skills</a>
+        <a class="menu-2 fixed-menu" onclick="contentFunction()">Experience</a>
+        <a class="menu-3 fixed-menu" onclick="contentFunction()">Goals</a>
+        <a class="menu-4 fixed-menu" onclick="contentFunction()">Other skills</a>
+        <a class="menu-5 fixed-menu" onclick="contentFunction()">Studies</a>
+        <a class="menu-6 fixed-menu" onclick="contentFunction()">Hobbies</a>
+      </div>
+      <div id="main-nav">
+        <ul id="nav-left" class="nav-element">
+          <li><a id="menu-button-1" class="menu-1 main-nav-item" onmouseover="menuDescrOn()">IT skills</a><a id="menu-descr-1"
+              class="menu-1 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">IT &amp; me so far</a></li>
+          <li><a id="menu-button-2" class="menu-2 main-nav-item" onmouseover="menuDescrOn()">Experience</a><a id="menu-descr-2"
+              class="menu-2 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Former jobs</a></li>
+          <li><a id="menu-button-3" class="menu-3 main-nav-item" onmouseover="menuDescrOn()">Goals</a><a id="menu-descr-3" class="menu-3 main-nav-item"
+              onclick="contentFunction()" onmouseout="menuDescrOff()">Where to get</a></li>
+        </ul>
+        <div onclick="mainClose()" id="profile-image" class="nav-element">
+          <img id="profile-pic" src="/image/myphoto.jpg" alt="Tóth Ádám">
+        </div>
+        <ul id="nav-right" class="nav-element">
+          <li><a id="menu-button-4" class="menu-4 main-nav-item" onmouseover="menuDescrOn()">Other skills</a><a id="menu-descr-4"
+              class="menu-4 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Things I'm good at</a></li>
+          <li><a id="menu-button-5" class="menu-5 main-nav-item" onmouseover="menuDescrOn()">Studies</a><a id="menu-descr-5"
+              class="menu-5 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">Educated here</a></li>
+          <li><a id="menu-button-6" class="menu-6 main-nav-item" onmouseover="menuDescrOn()">Hobbies</a><a id="menu-descr-6"
+              class="menu-6 main-nav-item" onclick="contentFunction()" onmouseout="menuDescrOff()">What I like to do</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="contents">
+      <div id="intro">
+        <p class="intro-text">I am Ádám Tóth. My profession, biology is a wonderful world of living things, but I'd like to challange myself in
+          a new field. My IT education started in 3rd grade and I've always been interested in IT (haha), development is
+          essential for me. I've created a few webpages with wysiwyg software, but I haven't been satisfied with the results.
+          Web development studies began about a year ago, I can get extremely obsessed throughout the tasks and projects.
+          The purpose of this page is to show my CV in interactive and non-conventional way. I'd like to work as a developer
+          asap for the sake of further self-development.</p>
+      </div>
+      <div id="content-1" class="content-section">
+        <a id="close-button" onclick="closeFunction()">Close</a>
+        <a id="pic-close-button" onclick="closePic()">Close</a>
+        <h2>IT knowledge in a nutshell</h2>
+        <div class="skill-row">
+          <img id="skill-1" onclick="skillFunction()" class="skill-icon" src="/image/win.png" alt="windows">
+          <img id="skill-2" onclick="skillFunction()" class="skill-icon" src="/image/excel.png" alt="excel">
+          <img id="skill-3" onclick="skillFunction()" class="skill-icon" src="/image/access.png" alt="access">
+        </div>
+        <p id="desc-1" class="description">Microsoft Windows<br><br>I can install, maintain, troubleshoot, manipulate regedit.</p>
+        <p id="desc-2" class="description">Microsoft Excel<br><br>I love to work in Excel, my specialty is colorful functions like <a onclick="excelPic()">this</a>.</p>
+        <img id="excel-function" src="/image/excel-function.jpg" alt="excel function">
+        <p id="desc-3" class="description">Microsoft Access<br><br>I used Access a lot for geodatabase management. I have experience with SQL queries too.</p>
+        <div class="skill-row">
+          <img id="skill-4" onclick="skillFunction()" class="skill-icon" src="/image/gis.png" alt="arcgis">
+          <img id="skill-5" onclick="skillFunction()" class="skill-icon" src="/image/sketch.png" alt="sketchup">
+          <img id="skill-6" onclick="skillFunction()" class="skill-icon" src="/image/wifi.png" alt="wifi">
+        </div>
+        <p id="desc-4" class="description">ESRI ArcGIS<br><br>I've been introduced to GIS when I worked at the national park and self-educated myself in ESRI's
+          software. I've stood up to every challange so far.</p>
+        <p id="desc-5" class="description">Google Sketchup<br><br>As I like DIY and we're in the middle of a home renovation (4 years so far) I've had the need
+          for a software to create 3D visualisations. I can easily get to the same obsession level as with coding.</p>
+        <p id="desc-6" class="description">Hálózatüzemeltetés<br><br>The wireless icon represents my knowledge of network maintenance. I can handle basic tasks
+          with local networks such as setting up printers, network drive assaignment, wifi networks, etc.
+        </p>
+        <div class="skill-row">
+          <img id="skill-7" onclick="skillFunction()" class="skill-icon" src="/image/html.png" alt="html">
+          <img id="skill-8" onclick="skillFunction()" class="skill-icon" src="/image/css.png" alt="css">
+          <img id="skill-9" onclick="skillFunction()" class="skill-icon" src="/image/js.png" alt="js">
+        </div>
+        <p id="desc-7" class="description">Wireframe<br><br>This site makes further explanation unnecessary.</p>
+        <p id="desc-8" class="description">She's got the look<br><br>The basic properties are ease to declare by now. For the rest I can always count on w3schools
+          and stackoverflow.</p>
+        <p id="desc-9" class="description">Come on come on, do the locomotion<br><br>I can solve a lot of functions, loops, conditional statements, DOMS are
+          in the tip of my fingers</p>
+        <div class="skill-row">
+          <img id="skill-10" onclick="skillFunction()" class="skill-icon" src="/image/responsive-design.png" alt="responsive design">
+          <img id="skill-11" onclick="skillFunction()" class="skill-icon" src="/image/bootstrap-logo.png" alt="bootstrap">
+          <img id="skill-12" onclick="skillFunction()" class="skill-icon" src="/image/github-logo.png" alt="github">
+        </div>
+        <p id="desc-10" class="description">Responsive design<br><br>I surf a lot on my phone, so I can really appreciate a flawless responsive page. Mobile
+          first!
+        </p>
+        <p id="desc-11" class="description">Bootstrap<br><br>I'm familiar with its gridsystem and some useful classes. For everything else I can always count
+          on w3.</p>
+        <p id="desc-12" class="description">Git<br><br>I just started with it. Since I work alone at the moment, only for version handling.</p>
+      </div>
+      <div id="content-2" class="content-section">
+        <h2>First steps on the labor market</h2>
+        <table class="job-list">
+          <thead>
+            <tr>
+              <td>assaignment</td>
+              <td>employer</td>
+              <td>period</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>nature conservation assistant</td>
+              <td>Government Office of Zala County</td>
+              <td>from 2017</td>
+            </tr>
+            <tr>
+              <td>Natura 2000 assistant</td>
+              <td>Lycaena Kft.</td>
+              <td>2013-2016</td>
+            </tr>
+            <tr>
+              <td>monitoring assistant</td>
+              <td>Őrség National Park Directorate</td>
+              <td>2012</td>
+            </tr>
+            <tr>
+              <td>SQA engineer</td>
+              <td>Flextronics, Zalaegerszeg</td>
+              <td>2012</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="content-3" class="content-section">
+        <h2>Things I'd like to achieve in the near future</h2>
+        <ol class="goal-list">
+          <li>Master JavaScript</li>
+          <li>Learn NodeJS, AngularJS</li>
+          <li>Learn PHP, Java</li>
+          <li>Get a well-payed developer job</li>
+          <li>Restoration of my BMW</li>
+          <li>Ride through Africa on a motorcycle</li>
+        </ol>
+      </div>
+      <div id="content-4" class="content-section">
+        <h2>Some other things I'm capable of</h2>
+        <table class="skill-table">
+          <tr>
+            <td>language skills</td>
+            <td>I've translated this site myself</td>
+          </tr>
+          <tr>
+            <td>mentality</td>
+            <td>analyzer, observer, planner, man of facts</td>
+          </tr>
+          <tr>
+            <td>social skills</td>
+            <td>open, friendly, calm, talkative, teamplayer, problem-solver</td>
+          </tr>
+          <tr>
+            <td>creativity</td>
+            <td>drawing, photography, DIY</td>
+          </tr>
+          <tr>
+            <td>music</td>
+            <td>amateur singer, guitarist</td>
+          </tr>
+        </table>
+        <p>Oh, and I can make electrical installations, cast concrete, scythe with a <a href="http://www.sztghonismeret.hu/component/spidercatalog/showproduct/182/36/0/Kaszagy%C3%A1r?Itemid=182"
+            target="_blank">"szentgotthárdi"</a>, cook onions with beans like <a href="http://budspencerofficial.com" target="_blank">Charlie Firpo.</a></p>
+      </div>
+      <div id="content-5" class="content-section">
+        <h2>Where schooldesks crafted my facelines</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>program</td>
+              <td>school</td>
+              <td>period</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>web developer</td>
+              <td><a href="https://codeberryschool.com/hu/" target="_blank">CodeBerry.hu</a></td>
+              <td>from 2016</td>
+            </tr>
+            <tr>
+              <td>biologist MSc</td>
+              <td>University of Pécs, Faculty of Sciences</td>
+              <td>2009-2011</td>
+            </tr>
+            <tr>
+              <td>biology BSc</td>
+              <td>University of Pécs, Faculty of Sciences</td>
+              <td>2006-2009</td>
+            </tr>
+            <tr>
+              <td>geologist</td>
+              <td>Eötvös Lóránd University, Faculty of Science</td>
+              <td>2005-2006</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="studies-text">After my high-school graduation in 2005 I started university years with geology program of ELTE-TTK Budapest<br>Since
+          the dust of Mother Earth had not been able to take my heart I switched to biology at PTE-TTK Pécs according to
+          my original plans. For everyone's surprise I had graduated in 6 semesters and after another 2 years I absolved
+          the master too.<br>I had been well aware of the drawbacks of a science career in Hungary so I didn't want to go
+          for the PhD.<br>I've started learning web development on <a href="https://codeberryschool.com/hu/" target="_blank">CodeBerry.hu</a>.
+          This site is made with the skills I acquired by the 4-5 hours I spend going through their lessons day by day. My
+          very next project is learning PHP right after mastering JavaScript.
+      </div>
+      <div id="content-6" class="content-section">
+        <h2>Let the pictures do the talk</h2>
+        <div id="thumbs" class="thumb-box" onwheel="thumbScroll()">
+          <img id="thumb-1" class="hobby-thumb" src="/image/01.jpg" alt="I've been playing football since 2002. Nowadays I play for Zalalövői TK competing in Zala County 1st Division.">
+          <img id="thumb-2" class="hobby-thumb" src="/image/02.jpg" alt="I really like to draw, I just can hardly find the time to do it. This piece was created on a Note8 with S-Pen.">
+          <img id="thumb-3" class="hobby-thumb" src="/image/03.jpg" alt="I can always find something to do at home, once a doghouse, once a hallway wall.">
+          <img id="thumb-4" class="hobby-thumb" src="/image/04.jpg" alt="Photography is another passion for me, but I had to save money for a motorcycle so I sold my camera.">
+          <img id="thumb-5" class="hobby-thumb" src="/image/05.jpg" alt="Life is great with 4 dogs. 2 mudis, 1 komondor, 1 vizsla, traditional Hungarian breeds.">
+          <img id="thumb-6" class="hobby-thumb" src="/image/06.jpg" alt="Lead singer I had been but Johnny went to university. The band is suspended until further notice.">
+          <img id="thumb-7" class="hobby-thumb" src="/image/07.jpg" alt="There's always something to do on a 30 yrs old BMW.">
+          <img id="thumb-8" class="hobby-thumb" src="/image/08.jpg" alt="I've got my license for motorcycles in 2015 then I sold my camera in 2017...">
+        </div>
+        <figure id="gallery">
+          <img id="close-x" class="pic-arrow" src="/image/close.png" alt="close" onclick="closeGallery()">
+          <div id="current-pic">
+            <img id="pic-left" class="pic-arrow" src="/image/left.png" alt="previous" onclick="changeLeft()">
+            <img id="big-pic" src="" alt="" onwheel="picScroll()">
+            <img id="pic-right" class="pic-arrow" src="/image/right.png" alt="next" onclick="changeRight()">
+          </div>
+          <figcaption id="pic-cap"></figcaption>
+        </figure>
+      </div>
+      <div id="contact">
+        <h2>Contact me via</h2>
+        <div class="contact-icons">
+          <div id="contacts">
+            <a class="icons" href="https://www.linkedin.com/in/tothadi/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a class="icons" href="https://facebook.com/tothadamtheoak" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a class="icons" href="mailto:tothadam.onp@gmail.com" target="_top"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+            <a class="icons" href="https://instagram.com/oakerator" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="icons" href="https://github.com/tothadi/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div id="copy-right">
+          <p>design &amp; code by tothadi - oakdesign.hu <i class="fa fa-copyright icons" aria-hidden="true"></i> 2018
+            <p>
+              <a href="http://oakdesign.hu" target="_blank"><img src="/image/oakdesign-logo.png" alt="oakdesign.hu"></a>
+              <a href="/" target="_self"><img src="/image/hungarian.png" alt="english version"></a>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
